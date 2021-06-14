@@ -1,10 +1,12 @@
 # Webview
 
-1. Prerequisites
+1. Install [xgo](https://github.com/karalabe/xgo)
+
+2. Install Ubuntu Prerequisites
 ```sh
-sudo apt install libwebkit2gtk-4.0-dev mingw-w64
+sudo apt-get install build-essential libgtk-3-dev libwebkit2gtk-4.0-dev mingw-w64
 ```
-2. Run buildscript
+3. Run buildscript to build for Linux and Windows
 ```
 ./build.py
 ```

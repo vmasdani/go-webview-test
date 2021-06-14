@@ -2,12 +2,8 @@
 
 import subprocess
 
-print('Building without CGO')
+print('Building for Linux...')
+subprocess.run('xgo --targets=windows/* -ldflags=\'-H windowsgui\' .', shell=True)
 
-print('Linux')
-
-subprocess.run('go build -o webview-example',shell=True)
-
-print('Windows')
-
-subprocess.run('go build -ldflags="-H windowsgui" -o webview-example.exe', shell=True)
+print('Building for Windows...')
+subprocess.run('xgo --targets=linux/* .', shell=True)
