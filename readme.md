@@ -8,5 +8,5 @@ sudo apt-get install build-essential libgtk-3-dev libwebkit2gtk-4.0-dev mingw-w6
 ```
 3. Run buildscript to build for Linux and Windows
 ```
-./build.py
+./build.sh
 ```
